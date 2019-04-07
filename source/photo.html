@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Закрыть</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Photos of Sedona</h1>
+      <img class="page-main__head-image" src="http://placehold.it/150x100" alt="Фото гор" width="320" height="160">
+      <section class="photos">
+        <div class="photos__annotation">
+        <h2 class="page-main__slogan">Фото и видео</h2>
+        <p class="page-main__text">Не можете решиться на путешествие из-за курса?
+           Фотографии помогут забть об экономике и политике</p>
+        </div>
+        <div class="photos__block">
+            <img class="photos__block-image" alt="Неродные просторы" height="280" width="280" src="http://placehold.it/150x100">
+            <p class="photos__block-name">Неродные просторы</p>
+            <p class="photos__block-author">Автор фото: Борис</p>
+            <div class="photos__like">
+              <img class="photos__like-image" alt="Лайки!" height="22" width="22" src="http://placehold.it/150x100">
+              <p class="photos__like-number">1350</p>
+            </div>
+        </div>
+        <div class="photos__block">
+            <img class="photos__block-image" alt="Местная растительность" height="280" width="280" src="http://placehold.it/150x100">
+            <p class="photos__block-name">Местная растительность</p>
+            <p class="photos__block-author">Автор фото: Сергей</p>
+            <div class="photos__like">
+              <img class="photos__like-image" alt="Лайки!" height="22" width="22" src="http://placehold.it/150x100">
+              <p class="photos__like-number">143</p>
+            </div>
+        </div>
+        <div class="photos__block">
+            <img class="photos__block-image" alt="Дорога на север" height="280" width="280" src="http://placehold.it/150x100">
+            <p class="photos__block-name">Дорога на север</p>
+            <p class="photos__block-author">Автор фото: Пётр</p>
+            <div class="photos__like">
+              <img class="photos__like-image" alt="Лайки!" height="22" width="22" src="http://placehold.it/150x100">
+              <p class="photos__like-number">96</p>
+            </div>
+        </div>
+        <div class="photos__block">
+            <img class="photos__block-image" alt="Мост дьявола" height="280" width="280" src="http://placehold.it/150x100">
+            <p class="photos__block-name">Мост дьявола</p>
+            <p class="photos__block-author">Автор фото: Антон</p>
+            <div class="photos__like">
+              <img class="photos__like-image" alt="Лайки!" height="22" width="22" src="http://placehold.it/150x100">
+              <p class="photos__like-number">254</p>
+            </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__annotation">
+          <h2 class="visually-hidden">Видео</h2>
+          <p class="page-main__slogan">Всё ещё сомневаетесь?</p>
+          <p class="page-main__text">Смотрите видеопрезентацию и скорее за билетами,
+            пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__tube">
+          <video height="200" width="320" controls="controls" src="http://placehold.it/150x100" poster="http://placehold.it/150x100">
+        </div>
+        <div class="video__control">
+          <div class="video__control-repeat video__button">
+            <img src="http://placehold.it/150x100" width="22" height="22" alt="repeat">
+          </div>
+          <div class="video__control-cc video__button">
+            <img src="http://placehold.it/150x100" width="22" height="22" alt="CC">
+          </div>
+          <div class="video__control-cc video__button">
+            <img src="http://placehold.it/150x100" width="35" height="22" alt="CC">
+          </div>
+          <div class="video__control-full video__button">
+            <img src="http://placehold.it/150x100" width="22" height="22" alt="full">
+          </div>
+        </div>
+      </section>
+    </main>
+
+        <footer class="page-footer">
+          <p class="page-footer__text">#visitsedona</p>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </footer>
+
+  </body>
+</html>
