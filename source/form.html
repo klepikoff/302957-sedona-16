@@ -3,39 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть</button>
+        <button class="main-nav__toggle main-nav__toggle-cross" type="button">Закрыть</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <li class="site-list__item site-list__nobord-top">
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a>Форма отзыва</a>
+              <a class="site-list__link">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <li class="site-list__item site-list__nobord-bottom">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="page-header__logo">
+            <img class="page-header__logo-image" width="102" height="84" alt="City of Sedona" src="img/logo-sedona-mobile.svg">
+        </div>
+        <button class="main-nav__toggle main-nav__toggle-menu" type="button">Открыть меню</button>
       </nav>
     </header>
 
     <main class="page-main">
+      <div class="page-main__top-image page-main__top-image-form">
+        <img src="../img/text-sedona.svg" height="100" width="230">
+        <img src="../img/bg-intro-triangle-mobile.svg" height="27" width="320">
+      </div>
       <h1 class="visually-hidden">Форма для Вашего отзыва</h1>
       <section class="review">
         <form method="get" class="page-main__form" id="review" action="https://echo.htmlacademy.ru">
-          <div class="review__invitation">
+          <div class="review__invitation page-main__border-bottom">
             <h2 class="page-main__slogan">Оставьте свой отзыв</h2>
             <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
               а также о посещённых Вами достопримечательностях</p>
@@ -106,22 +111,28 @@
 
     <footer class="page-footer">
       <p class="page-footer__text">#visitsedona</p>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВКонтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instagram</a>
-          </li>
-        </ul>
+      <div class="page-footer__social">
+        <div class="page-footer__social-item">
+          <a class="copyright__link" href="https://twitter.com/htmlacademy">
+            <img width="40" height="50" alt="Twitter" src="img/icon-twitter.svg">
+          </a>
+        </div>
+        <div class="page-footer__social-item">
+          <a class="copyright__link" href="ttps://www.facebook.com/htmlacademy">
+            <img width="40" height="50" alt="Facebook" src="img/icon-facebook.svg">
+          </a>
+        </div>
+        <div class="page-footer__social-item">
+          <a class="copyright__link" href="https://www.youtube.com/htmlacademy">
+            <img width="40" height="50" alt="Youtube" src="img/icon-youtube.svg">
+          </a>
+        </div>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img width="40" height="50" alt="HTML Academy" src="img/htmlacademy.svg">
+        </a>
       </div>
     </footer>
   </body>
